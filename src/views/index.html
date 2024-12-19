@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Palette - Create your unique environmental sound experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+        <p>Preparing sound experience...</p>
+    </div>
+    
+    <div id="welcome-screen" class="hidden">
+        <h1>Welcome to Sound Palette</h1>
+        <p>Create your unique environmental sound experience</p>
+        <ul>
+            <li>Click icons to play sounds</li>
+            <li>Combine multiple sounds to create unique atmosphere</li>
+            <li>Use the control panel below to adjust master volume</li>
+            <li>Save your favorite combinations for future use</li>
+        </ul>
+        <button id="start-experience">Start Experience</button>
+        <label>
+            <input type="checkbox" id="dont-show-again"> Don't show again
+        </label>
+    </div>
+
+    <header>
+        <h1>Sound Palette</h1>
+        <h2>Create your unique environmental sound experience</h2>
+        <select id="saved-combinations">
+            <option value="">Select saved combinations</option>
+        </select>
+    </header>
+
+    <main>
+        <div class="sound-grid"></div>
+    </main>
+
+    <footer>
+        <div class="control-panel">
+            <input type="range" id="master-volume" min="0" max="100" value="50">
+            <button id="play-pause-all">Pause All</button>
+            <button id="random-combination">Random Combination</button>
+            <button id="save-combination">Save Combination</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
